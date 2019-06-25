@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Helvetica Neue Cyr Light';
+    src: url('HelveticaNeueCyr-Light.eot');
+    src: url('HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Light.woff') format('woff'),
+    url('HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Helvetica Neue Cyr Medium';
+    src: url('HelveticaNeueCyr-Medium.eot');
+    src: url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Medium.woff') format('woff'),
+    url('HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+body {
+    font-size: 15px;
+}
+.text-header, list{
+    font-family: "Helvetica Neue Cyr light";
+}
+
+ol {
+    list-style-image: url(image/check_mark.png);
+}
+
+li {
+    padding-top: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+.header {
+    margin-top: 124px;
+}
+
+.title-block {
+    margin-top: 23px;
+    margin-bottom: 47px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.services, .title-block {
+    color: #2c3c53;
+    font-family: Athena;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.services {
+    margin-top: 115px;
+    padding-bottom:  48px;
+    padding-left: 155px;
+}
+
+base {
+    background-color: gray;
+}
+.base-title {
+    color: #1271f1;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 48px;
+}
+.base-text {
+    font-family: "Helvetica Neue Cyr light";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.base-text-bolt {
+    font-family: "Helvetica Neue Cyr - Medium";
+    padding-top: 150px;
+}

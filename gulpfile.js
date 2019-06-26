@@ -14,7 +14,7 @@ gulp.task('serve', function() {
 })
 
 gulp.task('build:css', function() {
-    return gulp.src(path.resolve(__dirname, "./src/style.scss"))
+    return gulp.src(path.resolve(__dirname, "./src/*.scss"))
     .pipe(sass())
     .pipe(autoprefixer( {
         browsers: ['last 2 versions'],
@@ -37,7 +37,7 @@ gulp.task('build:js', function() {
 })
 
 gulp.task('watch', function(cb) {
-    gulp.watch('./src/*.scss', gulp.series('build:css'))
+    gulp.watch('./src/*.(scss|sass)', gulp.series('build:css'))
     gulp.watch('./src/*.html', gulp.series('build:html'))
     gulp.watch('./src/*.js', gulp.series('build:js'))
     cb();

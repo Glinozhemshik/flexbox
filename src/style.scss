@@ -1,3 +1,7 @@
+// html {
+//     background:linear-gradient(45deg, gray,white,blue,purple,yellow,green,lime,pink,turquoise)
+//       }
+
 @font-face {
     font-family: 'Helvetica Neue Cyr Medium';
     src: url('HelveticaNeueCyr-Medium.eot');
@@ -35,6 +39,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 li {
@@ -57,7 +62,7 @@ img {
     line-height: 25px;
 }
 
-.services, .title-block, .title_testimonials{
+.services, .title-block, .title_testimonials {
     color: #2c3c53;
     font-family: Athena;
     font-size: 40px;
@@ -79,17 +84,46 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // align-items: center;
+    flex-wrap: wrap;
 }
 
 .base-title {
     color: #1271f1;
     font-size: 25px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-bottom: 48px;
-    background: url(image/1.png) no-repeat fixed center;
+    width: 19%;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    margin-bottom: 21px;
+    background: url(image/1.png) no-repeat center;
+
 }
+
+// .triangle {
+//     border-color: yellow blue red green;
+//     border-style: solid;
+//     border-width: 200px 200px 200px 200px;
+//     height: 0px;
+//     width: 0px;
+// }
+
+// .tr {
+//     width: 30%;
+//     padding-bottom: 21.27%; /* = width / 1.41 */
+//     position: relative;
+// }
+
+// .tr:before {
+// content: '';
+//     position: absolute;
+//     z-index: -5;
+//     top: 0;
+//     left: 24px;
+//     width: 500px;
+//     height: 400px;
+//     background: white;
+//     transform-origin: 0 100%;        
+//     transform: rotate(10deg);
+// }
 
 .base-text {
     font-family: "Helvetica Neue Cyr light";
@@ -97,6 +131,20 @@ img {
     font-weight: 300;
     line-height: 25px;
 }
+
+.background-image {
+    background: #f6f6f6;
+    position: absolute;
+    left: -300px;
+    width: 1000px;
+    height: 450px;
+    z-index: -10;
+    transform: scaleX(15deg);
+}
+
+// .wrap {
+//     position: relative;
+// }
 
 .base-text-bolt {
     font-family: "Helvetica Neue Cyr - Medium";
@@ -114,6 +162,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-family: "Helvetica Neue Cyr light";
     text-align: center;
 }
@@ -135,7 +184,9 @@ img {
 .footer {
     background-color: #2c3d53;
     margin-top: 235px;
-    height: 180px;
+    height: 170px;
+//     padding-top: 50px;
+//     padding-bottom: 50px;
 }
 
 .level {
@@ -146,6 +197,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border: 1px solid #2c3d53;
     font-size: 15px;
     color: #ffffff;
@@ -218,6 +270,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     color: #767c85;
     font-size: 14px;
 }
@@ -228,6 +281,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .el-2 {
@@ -236,8 +290,37 @@ img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .elem-3 {
     color: #ffffff;;
+}
+
+.pagination {
+    display: inline-block;
+  }
+  
+.pagination a {
+color: black;
+font-family: "Helvetica Neue Cyr light";
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+.pagination a.active {
+color: black;
+font-family: "Helvetica Neue Cyr - Medium";
+border-radius: 5px;
+}
+
+// .pagination a:hover:not(.active) {
+// background-color: #ddd;
+// border-radius: 5px;
+// }
+
+.container-pagination {
+    margin-top: 70px;
+    text-align: center;
 }
